@@ -52,7 +52,7 @@
 
     public class FoolsWand : IWeapon
     {
-        private readonly Random _random = new Random();
+        private readonly Random _random = new();
 
         public int CalculateDamage(Character attacker)
         {            
@@ -101,7 +101,7 @@
     {
         static void Main()
         {
-            GameEngine engine = new GameEngine();
+            GameEngine engine = new();
 
             Character warrior = new Warrior { Name = "Андрей воин" };
             Character mage = new Mage { Name = "Маг Сашка" };
