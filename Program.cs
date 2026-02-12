@@ -57,7 +57,8 @@
         public int CalculateDamage(Character attacker)
         {            
             if (attacker is Mage && _random.Next(2) == 0)
-            {
+            { 
+                // можно кортеж но я старый:)
                 int temp = attacker.Strength;
                 attacker.Strength = attacker.Magic;
                 attacker.Magic = temp;
